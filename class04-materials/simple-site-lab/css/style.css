@@ -1,0 +1,58 @@
+body{
+    border: 5px solid rgb(83, 188, 83);
+    margin: 40px;
+    padding: 8% 5%;
+    background-color: rgb(130, 216, 245);
+    background-size: contain;
+    color: white;
+}
+
+h1{
+    font-style: italic;
+    text-align: center;
+}
+
+ul {
+    position: relative;
+    display: block;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+li:first-of-type{
+    border-left: none;
+    padding-left: none;
+}
+
+li {
+    width: auto;
+    display: inline;
+    border-left: 2px solid gray;
+    padding-left: 0.3em;
+    /* justify-content: center; */
+}
+
+a {
+    text-decoration: none;
+    color: rgb(83, 188, 83);
+    font-weight: bold;
+}
+
+img {
+    float: right;
+    margin: 4px;
+    width: 180px;
+    height: auto;
+    margin: 5px;
+    padding: 8px 10px;
+}
+
+p {
+    /* display: inline-block; */
+    text-align: justify;
+    width: auto;
+    overflow: visible;
+}
+
+
+

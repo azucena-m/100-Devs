@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+header,footer{
+    height: 100px;
+    border: 2px solid black;
+    clear: both;
+}
+
+section > section {
+    height: 300px;
+    border: 2px solid black;
+    float: left;
+    width: 20%;
+}
+
+section section + section {
+    height: 300px;
+    border: 2px solid black;
+    float: left;
+    width: 40%;
+}
+
+section > article {
+    height: 300px;
+    border: 2px solid black;
+    float: left;
+    width: 20%;
+}
+
+article + article {
+    height: 300px;
+    border: 2px solid black;
+    float: left;
+    width: 20%;
+}

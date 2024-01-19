@@ -1,0 +1,347 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background: rgb(242, 246, 247);
+  height: 70px;
+  color: black;
+}
+
+
+a{
+  text-decoration: none;
+  color: orange;
+}
+
+.socials a{
+  color: black;
+}
+
+nav *{
+  float: left;
+  width: auto;
+  color: black;
+  display: block;
+  height: auto;
+ 
+}
+
+header img {
+  float: left;
+  width: 12%;
+  height: 100%;
+  padding-left: 2%;
+}
+
+nav ul{
+  float: left;
+  width: 88%;
+  height: 60%;
+  text-decoration: none;
+}
+
+.headNav li {
+  width: 14%;
+}
+
+.headNav li:nth-of-type(2),
+.headNav li:nth-of-type(4)
+{
+  padding: 0 5% 0 0;
+}
+
+.headNav li:nth-of-type(7),
+.headNav li:nth-of-type(8){
+  width: auto;
+  padding-left: 4%;
+}
+
+.top{
+  float: left;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background: url("../mainBackground.jpg");
+  background-size: cover;
+  padding: 10% 45% 10% 0;
+}
+
+form {
+  float: left;
+  width: 88%;
+}
+
+button {
+  float: left;
+  width: 12%;
+  margin-left: -28%;
+  margin-right: 20%;
+  background: orange;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  height: 13%;
+}
+
+.top section {
+  padding-top: 8%;
+  font-size: 12px;
+}
+
+
+.followers{
+  padding: 0 1% 0 3%;
+  color: orange;
+}
+
+.story{
+  float: left;
+  width: 100%;
+  height: 560px;
+  text-align: center;
+  padding: 20%;
+  background: url(../secondBackground.jpg);
+  background-size: cover;
+}
+
+.discover {
+  background: orange;
+  padding: 2%;
+  font-size: .7rem;
+  border-radius: 5%;
+}
+
+.discover a{
+  color: black;
+}
+
+.discover:last-of-type {
+  margin-left: -1%;
+  background: rgb(239, 182, 76);
+}
+
+.cuisine{
+  float: left;
+  width: 100%;
+  height: 224px;
+  text-align: center;
+  padding-top: 6%;
+}
+
+.cuisine ul {
+  padding-left: 21%;
+}
+
+.cuisine li{
+  float: left;
+  width: 12%;
+  display: block;
+  padding: 2% 7%;
+  border-bottom: 1px solid black;
+}
+
+.cuisine a {
+  color: black;
+}
+
+.cuisine a:hover {
+  color: orange;
+}
+
+.firstFourImg img,
+.secondFourImg img{
+  float: left;
+  width: 25%;
+  height: 288px;
+  padding: 2%;
+  object-fit: fill;
+}
+
+.book {
+  float: left;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding-top: 4%;
+}
+
+.book i {
+  color: orange;
+  font-size: 20px;
+}
+
+
+.schedule{
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.image img {
+  float: left;
+  width: 100%;
+  height: 394px;
+  object-fit: cover;
+  padding: 0 14%;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  padding: 5% 15% 10% 15%;
+}
+
+footer img {
+  width: 10%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.name, 
+.title {
+  display: block;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.title{
+  padding: 0 0 1% 0;
+  font-size: .7rem;
+}
+
+.stars {
+  color: gold;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 760px){
+  .nav {
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    padding-left: 15%;
+  }
+
+  .menu a {
+    display: block;
+    padding: 2px;
+    color: black
+  }
+
+  .menu a:hover {
+    color: white;
+  }
+
+  .nav{
+
+    max-height: 0;
+    transition: max-height .5s ease-out;
+  }
+
+  .hamburger{
+    float: right;
+    cursor: pointer;
+    padding: 40px 20px;
+  }
+  .hamb-line {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  }
+
+  .hamb-line::before,
+  .hamb-line::after{
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%
+  }
+
+  .hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+  .side-menu {
+    display: none;
+  }
+
+  /* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 80%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+form {
+  float: left;
+  width: 70%;
+}
+
+input {
+  width: 44%;
+}
+
+button {
+  float: left;
+  width: 21%;
+  margin-left: -20%;
+  /* margin-right: 31%; */
+  background: orange;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  height: 8.3%;
+  padding: 0;
+}
+
+.story {
+  padding: 25% 20% 20% 25%;
+}
+ 
+.story h2{
+  margin: 0;
+}
+
+.story p {
+  margin-top: 1%;
+}
+}

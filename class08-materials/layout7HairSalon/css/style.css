@@ -1,0 +1,483 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body *{
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 61px;
+  background: rgb(245,249,252);
+  color: black;
+}
+
+.logo {
+  font-family: 'Aguafina Script', cursive;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 1%;
+  float: left;
+  width: 8%;
+  display: block;
+}
+
+.side-menu {
+  display: none;
+}
+
+
+nav * {
+  float: left;
+  display: block;
+  width: 90%;
+  padding-left: 0;
+  color: black;
+  text-decoration: none;
+  height: 50px;
+  font-family: 'EB Garamond', serif;
+}
+
+li {
+  float: left;
+  width: 10%;
+}
+
+li:nth-of-type(1){
+  margin-left: 6%;
+}
+
+li:nth-of-type(4){
+  width: 12%;
+}
+
+.search {
+  width: 4%;
+}
+
+.bag {
+  width: 4%;
+}
+
+.navBook {
+  width: 12%;
+  margin-left: 11%;
+}
+
+span a {
+  color: white;
+  text-decoration: none;
+}
+
+.top {
+  background: url(../images/blueHair.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  float: left;
+  width: 100%;
+  padding: 5% 0 5% 10%;
+}
+
+h1{
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 43%;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-left: 11%;
+  margin-bottom: 0 ;
+}
+
+h5{
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.services {
+  display: block;
+  background: black;
+  color: white;
+  padding: 1.3%;
+  margin-top: 1%;
+  width: 14%;
+}
+
+aside {
+  background: black;
+  color: white;
+  width: 25%;
+  text-transform: uppercase;
+  margin-top: 4%;
+  padding: 2% 0;
+}
+
+aside h3{
+  padding-left: 8%;
+  font-size: .9rem;
+  border-left: 3px solid white;
+  line-height: 1.5rem;
+}
+
+aside h2 {
+  padding-left: 8%;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
+
+span.discount {
+  font-weight:500;
+  font-size: 2rem;
+}
+
+aside span.book{
+  background: white;
+  color: black;
+  display: block;
+  width: 49%;
+  margin-left: 9%;
+  padding: 3%;
+}
+
+.hours {
+  color: white;
+  display: block;
+  transform: rotate(90deg);
+  width: 20%;
+  margin: -28% 0 0 87%;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+.arrows{
+  display: block;
+  color: white;
+  width: 5%;
+  margin: 26% 0 0 95%;
+}
+
+.icon {
+  width: 17%;
+}
+
+.book a{
+  color: black;
+}
+
+.description {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  padding: 0 6%;
+  margin-top: 5%;
+}
+
+
+.momentum {
+  float: left;
+  width: 55%;
+  padding: 0 9% 0 17%;
+  margin-top: 5%;
+  background: rgb(235, 228, 228);
+  height: 304px;
+}
+
+.momentum h2{
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.momentum span {
+  background: black;
+  padding: 2%;
+  text-transform: uppercase;
+}
+
+.salon {
+  float: left;
+  width: 45%;
+  margin-top: 5%;
+  background: rgb(235, 228, 228);
+}
+
+.salon img{
+  height: 300px;
+  }
+  
+  .book a{
+    color: black;
+  }
+
+
+
+
+.stylists {
+  float: left;
+  width: 33.3333%;
+  margin: 9% 0 5% 0;
+  padding-left: 9%;
+}
+
+.stylists img {
+  height: 318px;
+
+}
+
+.stylists span {
+  margin-left: 21%;
+}
+
+.offer {
+  float: left;
+  width: 100%;
+  background: url(../images/shortBob.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  padding: 5% 60% 5% 10%;
+  margin-bottom: 7%;
+}
+
+.offer h3{
+  font-size: 2rem;
+  margin-left: 0;
+}
+
+.offer h2{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.offer h2 span {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.offer span.book {
+  background: white;
+  color: black;
+  display: block;
+  width: 49%;
+  padding: 3%;
+  text-transform: uppercase;
+}
+
+footer h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 2% 42%;
+  border-bottom: 2px solid black;
+  width: 14%;
+  text-transform: uppercase;
+}
+
+.firstThreeImages {
+  float: left;
+  width: 19%;
+  height: 430px;
+}
+
+.purpleHair{
+  margin-left: 20%;
+  
+}
+
+.redHair {
+  margin: 0 1%;
+  
+}
+
+.brunette {
+  margin-right: 20%;
+  
+}
+
+.secondThreeImages {
+  float: left;
+  width: 19%;
+  height: 430px;
+  margin-bottom: 5%;
+}
+
+.secondThreeImages img{
+  width: 50%;
+}
+
+.firstImage{
+  margin-left: 20%;
+}
+
+.plus {
+  margin: 0 1%;
+  height: 250px;
+}
+
+.thirdImage {
+  margin-right: 20%; 
+}
+
+
+/*******************************************/
+@media  screen and (max-width: 730px) { 
+  .logo{
+    font-size: 2.3rem;
+    padding: 2%;
+  }
+
+  .nav {
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    padding-left: 15%;
+  }
+
+  .menu a {
+    display: block;
+    padding: 2px;
+    color: black
+  }
+
+  .menu a:hover {
+    color: white;
+  }
+
+  .nav{
+
+    max-height: 0;
+    transition: max-height .5s ease-out;
+  }
+
+  .hamburger{
+    float: right;
+    cursor: pointer;
+    padding: 40px 20px;
+  }
+  .hamb-line {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  }
+
+  .hamb-line::before,
+  .hamb-line::after{
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%
+  }
+
+  .hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+  .side-menu {
+    display: none;
+  }
+
+  /* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 80%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+.top {
+  padding: 5% 0 5% 6%;
+}
+
+.aside{
+  width: 31%;
+}
+
+.description {
+  float: left;
+  width: 100%;
+}
+
+.description h3 {
+  margin-left: 0;
+}
+
+.momentum {
+  padding: 0 5% 0 5%;
+}
+
+.stylists {
+  padding-left: 1%;
+  height: 410px;
+}
+
+.offer {
+  padding: 16% 49% 5% 5%;
+}
+
+footer h2 {
+  font-size: 1.8rem;
+  margin: 0 0 4% 40%;
+  width: 25%;
+}
+.firstThreeImages {
+  width: 28%;
+  height: 368px;
+}
+.purpleHair,
+.firstImage {
+  margin-left: 6%;
+}
+
+.brunette,
+.thirdImage{
+  margin-right: 6%;
+}
+
+.secondThreeImages {
+  width: 28%;
+  height: 368px;
+}
+
+
+}

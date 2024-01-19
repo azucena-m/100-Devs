@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+
+header,footer {
+    /* background: gray; */
+    height: 100px;
+    border: 3px solid black;
+    clear: both;
+}
+
+section {
+    /* background: blue; */
+    height: 300px;
+    float: left;
+    width: 33.3333%;
+    border: 3px solid black;
+}
+
+/******************************************
+Media Queries
+******************************************/
+
+@media screen and (min-width: 1000px){
+    header,footer, .firstTwoBoxes, .thirdBox{
+        height: 300px;
+        float: left;
+        width: 20%;
+        clear: right;
+    }    
+}
+@media screen and (max-width: 747px) {
+    .firstTwoBoxes{
+        height: 300px;
+        float: left;
+        width: 50%;
+    }
+    .thirdBox {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .firstTwoBoxes, .thirdBox{
+        height: 300px;
+        width: 100%;
+    }   
+}
+
+
