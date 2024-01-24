@@ -2,7 +2,7 @@
 
 //Create and array of numbers. Sum all of the numbers. Alert the sum.
 let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log(nums.reduce(acc, c) => acc + c, 0)
+console.log(nums.reduce((acc, c) => acc + c, 0))
 //Create a function that takes in an array of numbers
 //Return a new array of numbers that is every original number squared
 let newArr = nums => nums.map( num => num**2) //the right side of nums has an implicit return  
@@ -18,7 +18,7 @@ let unoReverse = str => console.log(str.split('').reverse().join('')) //split tu
 // }
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
-const palindromeCheck = str => str === (str.split('').reverse().join) //if the string === the string reverse it is a palindrome
+const palindromeCheck = str => str === alert((str.split('').reverse().join(''))) //if the string === the string reverse it is a palindrome
 palindromeCheck('racecar')
 
 //  

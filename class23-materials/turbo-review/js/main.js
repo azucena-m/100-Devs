@@ -1,10 +1,10 @@
 // *Variables*
 // Declare a variable and assign it to a sentance as a string. Alert if the sentance is a question
-let sentance = 'this is a sentence that is also a string'
+const str = 'is this a question?'
 alert(str.endsWith('?'))
 //Declare a variable, assign it a string of multiple words, replace every "jr. dev" with "software engineer", and print it to the console
 let multipleWords = 'This is a sentencde for a jr. dev'
-console.log(str.replaceAll('jr. dev', 'software engineer'))
+console.log(multipleWords.replaceAll('jr. dev', 'software engineer'))
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
 // function rockPaperScissors() {
@@ -15,7 +15,7 @@ console.log(str.replaceAll('jr. dev', 'software engineer'))
 
 function rockPaperScissors(){
     let random = Math.random()
-    if(random < .22){
+    if(random < .33){
         return 'rock'
     } else if (random < .66){
         return 'paper'

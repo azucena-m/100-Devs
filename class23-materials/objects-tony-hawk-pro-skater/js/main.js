@@ -16,4 +16,4 @@ function ProSkater(skateColor, skateSize, sakaterWins, skaterAge){
     }
 } 
 
-let kareemCampbell = new ProSkater('black', 'large', 4, 22, 'ghetto bird')
+let kareemCampbell = new ProSkater('black', 'large', true, 22, 'ghetto bird') //new keyword is used to create a new object on the object that was originally created as ProSkater
