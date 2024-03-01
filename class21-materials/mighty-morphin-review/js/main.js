@@ -56,7 +56,7 @@ const headsOrTails = _ => Math.random() < .5 ? 'heads' : 'tails'
 
 
 function flipFlipFlipadelphia(n){
-    for (let i = 1; i <= n: i++){
+    for (let i = 1; i <= n; i++){
         let result = headsOrTails()
         console.log(result)
     }

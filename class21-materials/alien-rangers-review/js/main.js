@@ -16,7 +16,7 @@ console.log(onlyEvens(nums))
 //Alert the sum of the second lowest and the second highest number
 
 function sumSecondLowAndHigh(arr){
-    let sorted = arr.sort((a,b) => a-b)
+    let sorted = arr.sort((a,b) => a-b) //used for sorting numbers in a certain order
     alert(sorted[1] + sorted[sorted.length - 2])
 }
 
