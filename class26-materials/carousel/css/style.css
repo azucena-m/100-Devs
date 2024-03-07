@@ -1,0 +1,63 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  img{
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+  }
+  
+  h1, h2, h4{
+    text-align: center;
+  }
+
+  h3{
+    padding: 20px;
+  }
+
+  #carousel{
+    text-align: center;
+    width:1000px;
+    height: 800px;
+  }
+
+  .btn {
+    
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #b32c2c;
+    font-size: 18px;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  /* .btn-next {
+    top: 45%;
+    right: 2%;
+  } */
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
